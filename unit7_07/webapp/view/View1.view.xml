@@ -1,0 +1,30 @@
+<mvc:View xmlns:simple="sap.gantt.simple" controllerName="unit707.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+        <!-- <content /> expanded는 트루면 실행될 떄 바로 펼쳐져 있다. false면 닫혀있는 상태에서 실행 
+        expandable이 false면 펼치고 접는 기능이 사라지는 것. 그냥 펼쳐서만 나옴 
+        expandAnimation은 애니메이션 효과를 넣냐 안넣냐 많이 차이는 나지 않는다. 
+        -->
+        <Panel id="idPanel" expanded="true" expandable="true" expandAnimation="true">
+            <headerToolbar>
+                <Toolbar id="idToolbar">
+                    <content>
+                        <Text id="txtTitle" text="Personal Data"></Text>
+                        <ToolbarSpacer id="idToolSp"></ToolbarSpacer>
+                        <Button id="btnSave" icon="sap-icon://save" press="onSave"></Button>
+                        <Button id="btnCancel" icon="sap-icon://sys-cancel-2" press="onCancel"></Button>
+                    </content>
+                </Toolbar>
+            </headerToolbar>
+
+            <content>
+                <Label id="lblFname" text="Frist Name"></Label>
+                <Input id="inpFname" value="철수"></Input>
+                <Label id="lblLname" text="Last Name"></Label>
+                <Input id="inpLname" value="김"></Input>
+            </content>
+        </Panel>
+
+            </Page>
+</mvc:View>

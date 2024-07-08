@@ -1,0 +1,60 @@
+{
+    "configurations": [
+        {
+            "name": "Start unit7_07",
+            "type": "node",
+            "request": "launch",
+            "runtimeExecutable": "npx",
+            "cwd": "${workspaceFolder}/unit7_07",
+            "windows": {
+                "runtimeExecutable": "npx.cmd"
+            },
+            "runtimeArgs": [
+                "fiori",
+                "run"
+            ],
+            "args": [
+                "--open",
+                "test/flpSandbox.html#unit707-display"
+            ],
+            "console": "internalConsole",
+            "internalConsoleOptions": "openOnSessionStart",
+            "outputCapture": "std",
+            "port": 9229,
+            "env": {
+                "DEBUG": "--inspect",
+                "FIORI_TOOLS_URL_PARAMS": "sap-ui-xx-viewCache=false",
+                "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/unit7_07\"}"
+            }
+        },
+        {
+            "name": "Start unit7_07 Local",
+            "type": "node",
+            "request": "launch",
+            "cwd": "${workspaceFolder}/unit7_07",
+            "runtimeExecutable": "npx",
+            "windows": {
+                "runtimeExecutable": "npx.cmd"
+            },
+            "runtimeArgs": [
+                "fiori",
+                "run"
+            ],
+            "args": [
+                "--config",
+                "./ui5-local.yaml",
+                "--open",
+                "test/flpSandbox.html#unit707-display"
+            ],
+            "console": "internalConsole",
+            "internalConsoleOptions": "openOnSessionStart",
+            "outputCapture": "std",
+            "port": 9229,
+            "env": {
+                "FIORI_TOOLS_URL_PARAMS": "sap-ui-xx-viewCache=false",
+                "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/unit7_07\"}"
+            }
+        }
+    ],
+    "compounds": []
+}

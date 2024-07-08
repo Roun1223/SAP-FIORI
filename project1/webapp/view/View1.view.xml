@@ -1,0 +1,57 @@
+<mvc:View controllerName="project1.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m"
+    xmlns:f="sap.ui.layout.form"
+    xmlns:l="sap.ui.layout"
+    xmlns:core="sap.ui.core">
+    <Page id="page" title="{i18n>title}">
+        <!-- <content /> -->
+        <f:SimpleForm id="simForm1" width="50%" layout="ResponsiveGridLayout">
+            <f:toolbar>
+                <Toolbar id="idTB1">
+                    <Title id="idTlt1" text="Condition"></Title>
+                    <ToolbarSpacer id="idTBSp"></ToolbarSpacer>
+                    <Button id="idBtnSch" icon="sap-icon://search" press="onSearch"></Button>
+                </Toolbar>
+            </f:toolbar>
+
+            <f:content>
+                <Label id="lblName" text="Name"></Label>
+                <Input id="inpName" placeholder="Input Name"></Input>
+            </f:content>
+
+        </f:SimpleForm>
+
+        <f:SimpleForm id="simForm2" layout="ResponsiveGridLayout">
+            <f:content>
+                <!-- 새로운 컨테이너 생성은 타이틀 -->
+                <core:Title id="tltPer" text="Personal Info"></core:Title>
+                <!-- 새로운 폼 엘리먼트 생성은 라벨  -->
+                <Label id="lblSName" text="Name"></Label>
+                <Input id="inpSName" value="철수" editable="false"></Input>
+                <Label id="lblBDate" text="Date of Birth"></Label>
+                <DatePicker id="DpBDate" value="2000-03-14"></DatePicker>
+
+                <core:Title id="tltCom" text="Company Info"></core:Title>
+                <Label id="lblComp" text="Company Name"></Label>
+                <Input id="inpComp" value="SYNC 5th"></Input>
+                <Label id="lblEntDt" text="Entered Date"></Label>
+                <DatePicker id="Tlt" value="2000-01-01"></DatePicker>
+                
+                <core:Title id="tltAddr" text="Address Info"></core:Title>
+                <Label id="lblAddr" text="Street/City"></Label>
+                <Input id="inpStr" value="종로구 종로12길 15 2층"></Input>
+                <Input id="insCity" value="서울시" editable="false"></Input>
+                
+                <core:Title id="tltTel" text="Telphone Info"></core:Title>
+                <Label id="lblTel" text="Tel No."></Label>
+                <Input id="inpNo1" value="02" editable="false"></Input>
+                <Input id="inpNo2" value="2453" editable="false"></Input>
+                <Input id="inpNo3" value="9255" editable="false"></Input>
+
+                <Label id="lnltm" text="Image"></Label>
+                <Image id="inpImg" src="http://www.sap.com/global/ui/images/global/sap-logo.png"></Image>
+                </f:content>
+        </f:SimpleForm>
+    </Page>
+</mvc:View>
