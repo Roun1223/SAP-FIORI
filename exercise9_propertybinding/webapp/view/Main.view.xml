@@ -1,0 +1,17 @@
+<mvc:View controllerName="exercise9propertybinding.controller.Main"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m"
+    xmlns:l="sap.ui.layout">
+
+    <Page id="page" title="{i18n>title}">
+        <!-- <content /> -->
+    <l:VerticalLayout id="id">
+        <l:content>
+            <RadioButton id="idRad1" groupName="GroupA" selected="{/enabled}" text="Change"></RadioButton>
+            <RadioButton id="idRad2" groupName="GroupB" text="Display"></RadioButton>
+            <Input id="idinp" enabled="{/enabled}" value="{/name}" valueLiveUpdate="true"></Input>
+            <Text id="idtex" text="{/name}"></Text>
+       </l:content>
+    </l:VerticalLayout>
+    </Page>
+</mvc:View>
