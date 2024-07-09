@@ -1,0 +1,10 @@
+<mvc:View controllerName="unit9binding.controller.Main"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+        <!-- <content    프로펄티 바인딩 -  /> -->
+        <Input id="inpFname" value="{/firstName}" editable="{/enable}"></Input>
+        <Input id="inpLname" value="{/lastName}"></Input>
+        <CheckBox id="chkBox" text="All" select="{/checked}"></CheckBox>
+    </Page>
+</mvc:View>

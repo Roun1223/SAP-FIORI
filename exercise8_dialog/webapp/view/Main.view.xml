@@ -1,0 +1,16 @@
+<mvc:View xmlns:layout="sap.ui.layout" controllerName="exercise8dialog.controller.Main"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m"
+    xmlns:l="sap.ui.layout">
+
+    <Page id="page" title="{i18n>title}">
+        <!-- <content /> -->
+        <l:VerticalLayout id="id">
+            <l:content>
+                <Button id="idBut" text="Open dialog" press="onClick"></Button>
+                <Text id="idText" text="aa"/>
+
+            </l:content>
+        </l:VerticalLayout>
+    </Page>
+</mvc:View>

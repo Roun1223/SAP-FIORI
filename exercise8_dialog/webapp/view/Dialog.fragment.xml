@@ -1,0 +1,22 @@
+<core:FragmentDefinition 
+ xmlns="sap.m"
+ xmlns:core="sap.ui.core"
+ xmlns:f="sap.ui.layout.form">
+
+    <Dialog id="idDia" title="XML Fragment Dialog">
+        <buttons>
+          <Button id="idbutcolse" press="onClose" text="OK"/>
+        </buttons>
+
+        <content>
+            <f:SimpleForm id="idSimple">
+                <f:content>
+                    <Label id="lblFrg" text="Name"></Label>
+                    <Input id="idinpFrg"></Input>
+                </f:content>
+            </f:SimpleForm>
+        </content>
+          
+        </Dialog>
+</core:FragmentDefinition>
+

@@ -1,0 +1,21 @@
+<core:FragmentDefinition 
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core">
+
+    <Dialog id="digPopup" title="Popup Fragment" >
+    <buttons>
+    <Button id="btnClose" text="Close" press="onClose" ></Button>
+    </buttons>
+
+    <content>
+        <Text id="txtPopu" text="Popup Fragment Text"></Text>
+        <!-- /// 아이템을 센터로 맞추겠다.  -->
+        <HBox id="idHbox" alignItems="Center">
+        <!-- 클래스를 이용해 여백을 만들어 깔금하게 보이게 함  -->
+            <Label id="lblName" text="Name" class="sapUiResponsiveMargin"></Label>
+            <Input id="inpName" ></Input>
+        </HBox>
+    </content>
+    </Dialog>
+
+</core:FragmentDefinition>

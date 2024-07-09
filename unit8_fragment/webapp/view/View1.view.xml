@@ -1,0 +1,16 @@
+<mvc:View controllerName="unit8fragment.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core">
+    <Page id="page" title="{i18n>title}">
+        <!-- <content /> -->
+        <Input id="inpMain" value="Main View"></Input>
+        <Button id="btnMain" text="Main Button" press="onMainClick"></Button>
+
+        <!-- Fragment -->
+        <core:Fragment id="idXmlFrag" fragmentName="unit8fragment.view.XmlFrag" type="XML"/>
+         <!-- <core:Fragment id="idXmlFrag" fragmentName="unit8fragment.view.XmlFrag" type="XML"/>
+  -->
+    
+    </Page>
+</mvc:View>

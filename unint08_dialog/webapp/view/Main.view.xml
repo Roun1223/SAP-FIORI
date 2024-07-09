@@ -1,0 +1,14 @@
+<mvc:View controllerName="unint08dialog.controller.Main"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+        <!-- <content /> -->
+        <VBox id="idVbox">
+            <items>
+                <Button id="btnPopup" text="Popup" press="onPopup"/>
+                <Text id="idTxt" text="a"></Text>
+                
+            </items>
+        </VBox>
+    </Page>
+</mvc:View>

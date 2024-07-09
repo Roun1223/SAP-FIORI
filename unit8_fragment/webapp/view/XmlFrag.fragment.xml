@@ -1,0 +1,9 @@
+<!-- sap.m / sap.ui.core 는 기본적으로 있어야 한다.  -->
+<core:FragmentDefinition
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core">
+
+    <Input id="inpFrag" value="Fragment Input Field"></Input>
+    <Button id="btnFrag" text="Fragment Button" press="onFragClick"></Button>
+
+</core:FragmentDefinition>

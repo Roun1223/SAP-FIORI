@@ -1,0 +1,46 @@
+<mvc:View controllerName="ex01.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m"
+    xmlns:f="sap.ui.layout.form"
+    xmlns:l="sap.ui.layout"
+    xmlns:core="sap.ui.core">
+    <Page id="page" title="Exercise for layout controls">
+
+    <Panel id="idPanel" headerText="Panel with SimpleForm" class="sapUiResponsiveContentPadding">
+    <content>
+        <f:SimpleForm id="idSim" layout="ResponsiveGridLayout" editable="true">
+            <f:content>
+                <core:Title id="idTit" text="Key of flight connection"></core:Title>
+                <Label id="lbl1" text="Carrier">
+                <layoutData><l:GridData id="idGridDatal" span="L2 M4 S12"></l:GridData> </layoutData>
+                </Label>
+
+                <Input id="inp1">
+                <layoutData><l:GridData id="idGridData11" span="L10 M8 S12"></l:GridData> </layoutData>
+                </Input>
+
+                <Label id="lbl2" text="Flight number">
+                <layoutData><l:GridData id="idGridData2" span="L2 M4 S12"></l:GridData> </layoutData>
+                </Label>
+
+                <Input id="inp2">
+                <layoutData><l:GridData id="idGridData22" span="L10 M8 S12"></l:GridData> </layoutData>
+                </Input>
+                
+                <Button id="idButton" text="Submit">
+                <layoutData><l:GridData id="idGridData3" indent="M4" span="L2 M8 S12"></l:GridData> </layoutData>
+                </Button>
+                
+
+            </f:content>
+            <f:title>
+                <core:Title id="idttle" text="SimpleForm with ResponsiveGridLayout"></core:Title>
+                
+            </f:title>
+        </f:SimpleForm>
+        <Image id="idIma" src="/img/plane.png" width="100%" class="sapUiHideOnPhone"></Image>
+    </content>
+
+    </Panel>
+    </Page>
+</mvc:View>
